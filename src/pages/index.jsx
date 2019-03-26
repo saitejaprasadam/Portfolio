@@ -56,12 +56,22 @@ const ContactText = styled.p`
 `
 
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md sm:text-sm`};
 `
 
 const CustomButton = styled.div`
   color: white;
 `
+
+const buttonStyles = {
+  fontSize: "13px",
+  textAlign: "center",
+  color: "#fff",
+  padding: "12px 30px",
+  backgroundColor: "rgb(255, 255, 255, 0.01)",
+  borderRadius: "6px",
+  borderWidth: "1px",
+}
 
 const Index = () => (
   <>
@@ -71,25 +81,26 @@ const Index = () => (
         <BigTitle>
           Hello, <br /> I'm Saiteja Prasadam.
         </BigTitle>
-        <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+        <Subtitle>DevOps Engineer.</Subtitle>
+        <button style={buttonStyles}>Linked In</button>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
-            This project is my entry to Adobe's #ChallengeYourPerspective contest.
+            title="KMR Player"
+            link="projects/kmr-player"
+            bg="linear-gradient(to right, #773987 0%, #BF2D64 100%)">
+            Materialized Android Music Player with LAN Networking Support with your squad.
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
+            title="Tik Tok Scrapper"
             link="https://www.behance.net/gallery/52915793/Harry-Potter"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
             I entered the DOCMA 2017 award with this Harry Potter inspired image.
           </ProjectCard>
           <ProjectCard
-            title="Tomb Raider"
+            title="Automatic Number Plate Recognition System"
             link="https://www.behance.net/gallery/43907099/Tomb-Raider"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)">
             Recreation of a Tomb Raider Wallpaper (Fan Art)
@@ -129,9 +140,7 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
+          Inspired by {' '} <a target="_blank" href="https://www.lekoarts.de">LekoArts</a>
         </Footer>
       </Contact>
     </Parallax>
