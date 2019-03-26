@@ -52,25 +52,30 @@ const AboutDesc = styled.p`
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-grey-light font-sans text-xl md:text-md lg:text-2md`};
 `
 
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md sm:text-sm`};
 `
 
-const CustomButton = styled.div`
-  color: white;
-`
-
 const buttonStyles = {
-  fontSize: "13px",
+  fontSize: "12px",
   textAlign: "center",
-  color: "#fff",
+  color: "#000000",
   padding: "12px 30px",
-  backgroundColor: "rgb(255, 255, 255, 0.01)",
-  borderRadius: "6px",
+  backgroundColor: "rgb(255, 255, 255)",
+  borderRadius: "4px",
   borderWidth: "1px",
+  cursor: "pointer",
+}
+
+const marginRight = {
+  marginRight: "15px"
+}
+
+const marginBottom = {
+  marginBottom: "10px"
 }
 
 const Index = () => (
@@ -82,9 +87,59 @@ const Index = () => (
           Hello, <br /> I'm Saiteja Prasadam.
         </BigTitle>
         <Subtitle>DevOps Engineer.</Subtitle>
-        <button style={buttonStyles}>Linked In</button>
+        
+        <a style={marginRight} target="_blank" href="https://linkedin.com/in/saitejaprasadam/">
+          <button style={buttonStyles}>LinkedIn</button>
+        </a>
+
+        <a style={marginRight} target="_blank" href="https://github.com/saitejaprasadam/">
+          <button style={buttonStyles}>Github</button>
+        </a>
+
+        <a style={marginRight} target="_blank" href="mailto:saitejaprasadam@gmail.com">
+          <button style={buttonStyles}>Email</button>
+        </a>
+
+        <a style={marginRight} target="_blank" href="/Saiteja Prasadam.pdf">
+          <button style={buttonStyles}>Resume</button>
+        </a>
       </Hero>
-      <Projects offset={1}>
+      
+      <About offset={1}>
+        <Title>About</Title>
+        <AboutHero>
+          <Avatar src={avatar} alt="Saiteja Prasadam" />
+          <AboutSub>
+            The English language can not fully capture the depth and complexity of my thoughts.<br/>
+
+            <a style={marginRight} target="_blank" href="https://linkedin.com/in/saitejaprasadam/">
+              <button style={buttonStyles}>LinkedIn</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="https://github.com/saitejaprasadam/">
+              <button style={buttonStyles}>Github</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="mailto:saitejaprasadam@gmail.com">
+              <button style={buttonStyles}>Email</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="/Saiteja Prasadam.pdf">
+              <button style={buttonStyles}>Resume</button>
+            </a>
+          </AboutSub>
+
+        </AboutHero>
+        <AboutDesc>
+          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
+          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
+          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
+          right?
+        </AboutDesc>
+      </About>
+      
+      <Projects offset={2}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -113,14 +168,30 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3}>
+      <About offset={4}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
+          <Avatar src={avatar} alt="Saiteja Prasadam" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            The English language can not fully capture the depth and complexity of my thoughts.<br/>
+
+            <a style={marginRight} target="_blank" href="https://linkedin.com/in/saitejaprasadam/">
+              <button style={buttonStyles}>LinkedIn</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="https://github.com/saitejaprasadam/">
+              <button style={buttonStyles}>Github</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="mailto:saitejaprasadam@gmail.com">
+              <button style={buttonStyles}>Email</button>
+            </a>
+
+            <a style={marginRight} target="_blank" href="/Saiteja Prasadam.pdf">
+              <button style={buttonStyles}>Resume</button>
+            </a>
           </AboutSub>
+
         </AboutHero>
         <AboutDesc>
           You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
@@ -130,13 +201,13 @@ const Index = () => (
           right?
         </AboutDesc>
       </About>
-      <Contact offset={4}>
+      <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a target="_blank" href="mailto:saitejaprasadam@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a target="_blank" href="https://linkedin.com/in/saitejaprasadam/">LinkedIn</a> &{' '}
+            <a target="_blank" href="https://github.com/saitejaprasadam">Github</a>
           </ContactText>
         </Inner>
         <Footer>
