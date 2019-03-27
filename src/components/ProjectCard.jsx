@@ -21,9 +21,11 @@ const Text = styled.div`
 
 //uppercase
 const Title = styled.div`
-  ${tw`text-white text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-1`};
+  ${tw`text-white text-xl md:text-2xl xl:text-3xl tracking-wide font-sans pt-1`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   margin-left: 20px;
+  line-height: 1;
+  margin-bottom: 15px;
 `
 
 const ProjectCard = ({ title, link, children, bg }) => (

@@ -91,8 +91,13 @@ const marginRight = {
   marginRight: "15px"
 }
 
-const violetColor = {
-  color: "#9561E2"
+const moreButton = {
+  textAlign: "center",
+  width: "100%"
+}
+
+const yellowColor = {
+  color: "#FFA500"
 }
 
 const Index = () => (
@@ -127,7 +132,7 @@ const Index = () => (
         <AboutHero>
           <AvatarSmall src={propertyApps} alt="Property Apps" />
           <AboutSub>
-              <a target="_blank" href="https://linkedin.com/company/property-apps/">Property Apps</a>
+              <a style={yellowColor} target="_blank" href="https://linkedin.com/company/property-apps/">Property Apps</a>
               <br/>
               <SubtitleNoMargin>Full Stack Developer · PHP (Laravel), Angular 4 & Ionic 3</SubtitleNoMargin>
               <SubSubtitleNoMargin>1 Year and 9 Months ( Jan 2017 – October 2018)</SubSubtitleNoMargin>
@@ -146,7 +151,7 @@ const Index = () => (
         <AboutHero>
           <AvatarSmall src={contenterra} alt="ContenTerra" />
           <AboutSub>
-              <a target="_blank" href="https://linkedin.com/company/contenterra-software/">ContenTerra</a>
+              <a style={yellowColor} target="_blank" href="https://linkedin.com/company/contenterra-software/">ContenTerra</a>
               <br/>
               <SubtitleNoMargin>.Net developer Intern · C# Windows Services, Redis</SubtitleNoMargin>
               <SubSubtitleNoMargin>3 Months ( Jan 2016 to April 2016)</SubSubtitleNoMargin>
@@ -164,32 +169,39 @@ const Index = () => (
 
       <Projects offset={2.98}>
         <Title>Projects</Title>
+        
         <ProjectsWrapper>
+          <ProjectCard
+            title="Hippo"
+            link="projects/hippo"
+            bg="linear-gradient(to right, #6913CC 0%, #2772FA 100%)">
+            Android Application for streaming torrent (Purely for Educational Purpose).
+          </ProjectCard>
+
           <ProjectCard
             title="KMR Player"
             link="projects/kmr-player"
             bg="linear-gradient(to right, #ED1E79 0%, #662D8C 100%)">
             Materialized Android Music Player with LAN Networking Support with your squad.
-          </ProjectCard>
-          <ProjectCard
-            title="Tik Tok Scrapper"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
-          </ProjectCard>
+          </ProjectCard>          
+          
           <ProjectCard
             title="Automatic Number Plate Recognition System"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)">
+            link="projects/automatic-number-plate-recognition-system"
+            bg="linear-gradient(to right, #01A1FA 0%, #29F399 100%)">
             Recreation of a Tomb Raider Wallpaper (Fan Art)
           </ProjectCard>
+          
           <ProjectCard
-            title="Eagle"
-            link="https://www.behance.net/gallery/38068151/Eagle"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
+            title="Share Doc"
+            link="projects/share-doc"
+            bg="linear-gradient(to right, #FF3C5E 0%, #FFAD97 100%)">
             A fantasy image manipulation relocating the habitat of wild animals.
           </ProjectCard>
-        </ProjectsWrapper>
+        </ProjectsWrapper>              
+
+        <Subtitle style={moreButton}><a target="_blank" href="projects/">See more of my works</a></Subtitle>
+
       </Projects>
       
       <About offset={4}>
@@ -233,13 +245,13 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a target="_blank" href="mailto:saitejaprasadam@gmail.com" style={violetColor}>Hi</a> or find me on other platforms:{' '}
-            <a target="_blank" href="https://linkedin.com/in/saitejaprasadam/" style={violetColor}>LinkedIn</a> &{' '}
-            <a target="_blank" href="https://github.com/saitejaprasadam" style={violetColor}>Github</a>
+            Say <a target="_blank" href="mailto:saitejaprasadam@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a target="_blank" href="https://linkedin.com/in/saitejaprasadam/">LinkedIn</a> &{' '}
+            <a target="_blank" href="https://github.com/saitejaprasadam">Github</a>
           </ContactText>
         </Inner>
         <Footer>
-          Inspired by {' '} <a target="_blank" href="https://www.lekoarts.de">LekoArts</a>
+          Template inspired from {' '} <a target="_blank" href="https://lekoarts.de">LekoArts</a>
         </Footer>
       </Contact>
     
