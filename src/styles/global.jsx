@@ -6,12 +6,9 @@ const GlobalStyle = createGlobalStyle`
   }
   html {
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
+    box-sizing: border-box;    
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
-    -webkit-font-smoothing: antialiased;
+    background-color: #161719;    
     -moz-osx-font-smoothing: grayscale;
   }
   html, body {
@@ -21,9 +18,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   a {
-    color: #e07628;
+    color: #FFA500;
     text-decoration: none;
   }
 `
 
+//overflow-x: hidden;
+//-ms-overflow-style: scrollbar;
+//-webkit-font-smoothing: antialiased;
+//#F6EC21
 export default GlobalStyle

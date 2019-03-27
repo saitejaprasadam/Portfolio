@@ -20,6 +20,7 @@ import Experience from '../views/Experience'
 
 import profileImage from '../images/Saiteja Prasadam.jpg'
 import propertyApps from '../images/Property Apps.png'
+import contenterra from '../images/Contenterra.png'
 //import { Fragment } from 'react'
 import { style_css } from '../styles/global.css'
 
@@ -45,6 +46,10 @@ const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
 
+const AvatarSmall = styled.img`
+  ${tw`rounded-full w-16 xl:w-32 shadow-lg h-auto`};
+`
+
 const AboutSub = styled.span`
   ${tw`text-white font-serif pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
   width: 100%
@@ -52,6 +57,15 @@ const AboutSub = styled.span`
 
 const Desc = styled.p`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+`
+
+const DescSmall = styled.p`
+  ${tw`text-white text-md md:text-lg lg:text-xl font-sans text-justify`};
+`
+
+const DescSmallWithMargin = styled.p`
+  ${tw`text-white text-md md:text-lg lg:text-xl font-sans text-justify`};
+  margin-bottom: 80px;
 `
 
 const ContactText = styled.p`
@@ -77,18 +91,14 @@ const marginRight = {
   marginRight: "15px"
 }
 
-const marginBottom = {
-  marginBottom: "10px"
-}
-
-const li = {
-
+const violetColor = {
+  color: "#9561E2"
 }
 
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           Hello, <br /> I'm Saiteja Prasadam.
@@ -115,7 +125,7 @@ const Index = () => (
       <Experience offset={1}>
         <Title>Experience</Title>
         <AboutHero>
-          <Avatar src={propertyApps} alt="Property Apps" />
+          <AvatarSmall src={propertyApps} alt="Property Apps" />
           <AboutSub>
               <a target="_blank" href="https://linkedin.com/company/property-apps/">Property Apps</a>
               <br/>
@@ -123,7 +133,7 @@ const Index = () => (
               <SubSubtitleNoMargin>1 Year and 9 Months ( Jan 2017 – October 2018)</SubSubtitleNoMargin>
           </AboutSub>
         </AboutHero>
-        <Desc>
+        <DescSmallWithMargin>
           <ul>
             <li>Worked on there on going project – Property Apps (The Property Apps app is a feature-full solution for building communication and management), Assisted in designing, developing and maintain various modules, which is being current used in many real estate companies to manage their buildings.</li>
             <li>Technologies used Laravel (MVC), Angular 4, Ionic 3, JSON Rest API, Firebase Cloud Push Notifications, Word Press.</li>
@@ -131,11 +141,28 @@ const Index = () => (
             <li>Ported Code Ignitor to Laravel Framework, Ionic 2 to Ionic 3.</li>
             <li>Used Scrum Life Cycle.</li>
           </ul>
-        </Desc>
+        </DescSmallWithMargin>   
 
+        <AboutHero>
+          <AvatarSmall src={contenterra} alt="ContenTerra" />
+          <AboutSub>
+              <a target="_blank" href="https://linkedin.com/company/contenterra-software/">ContenTerra</a>
+              <br/>
+              <SubtitleNoMargin>.Net developer Intern · C# Windows Services, Redis</SubtitleNoMargin>
+              <SubSubtitleNoMargin>3 Months ( Jan 2016 to April 2016)</SubSubtitleNoMargin>
+          </AboutSub>
+        </AboutHero>
+        <DescSmallWithMargin>
+          <ul>
+            <li>Worked on there on going project – FedBizIntel (It offers the complete government sales platform providing 360˚ support with opportunity portal, government-focused website re-branding, social media jump start, capture support, and proposal writing services.)</li>
+            <li>Worked in designing, developing website for the sales portal and worked on the backend .net framework services to perform operations on the government focus website to analyze all the information on the contracts.</li>
+            <li>Technologies used .Net platform C#, MVC, Redis, Windows Service.</li>
+            <li>Used Scrum Life Cycle.</li>
+          </ul>
+        </DescSmallWithMargin>      
       </Experience>
-      
-      <Projects offset={2}>
+
+      <Projects offset={2.98}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -190,28 +217,32 @@ const Index = () => (
           </AboutSub>
 
         </AboutHero>
-        <Desc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
-        </Desc>
+        <DescSmall>
+          <b>Educational Qualifications</b>
+          <ul>
+            <li>Master’s in Applied Computer Science - Concordia University (Montreal, Canada)</li>
+            <li>Bachelor’s in Information Technology - CVR College of Engineering (Hyderabad, India)</li>
+          </ul>
+
+          <b>Languages Known: </b>English, Hindi & Telugu.<br/>
+          <b>Hobbies: </b>Programming, Gaming, Photography, Traveling, Cooking, learning new things related to technology, listening to music, Watching tech YouTube videos.          
+        </DescSmall>
       </About>
       
       <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a target="_blank" href="mailto:saitejaprasadam@gmail.com">Hi</a> or find me on other platforms:{' '}
-            <a target="_blank" href="https://linkedin.com/in/saitejaprasadam/">LinkedIn</a> &{' '}
-            <a target="_blank" href="https://github.com/saitejaprasadam">Github</a>
+            Say <a target="_blank" href="mailto:saitejaprasadam@gmail.com" style={violetColor}>Hi</a> or find me on other platforms:{' '}
+            <a target="_blank" href="https://linkedin.com/in/saitejaprasadam/" style={violetColor}>LinkedIn</a> &{' '}
+            <a target="_blank" href="https://github.com/saitejaprasadam" style={violetColor}>Github</a>
           </ContactText>
         </Inner>
         <Footer>
           Inspired by {' '} <a target="_blank" href="https://www.lekoarts.de">LekoArts</a>
         </Footer>
       </Contact>
+    
     </Parallax>
   </>
 )

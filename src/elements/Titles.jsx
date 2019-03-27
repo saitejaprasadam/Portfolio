@@ -36,7 +36,7 @@ export const SubtitleNoMargin = styled.p`
 `
 
 export const SubSubtitleNoMargin = styled.p`
-  ${tw`text-lg lg:text-lg font-sans text-white mt-1 xxl:w-3/4`};
+  ${tw`text-lg lg:text-lg font-sans text-grey-light mt-1 xxl:w-3/4`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   margin: 4px !important;
 `
