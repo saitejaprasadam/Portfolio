@@ -9,16 +9,18 @@ import ProjectCard from '../components/ProjectCard'
 
 // Elements
 import Inner from '../elements/Inner'
-import { Title, BigTitle, Subtitle } from '../elements/Titles'
+import { Title, BigTitle, Subtitle, SubtitleNoMargin, SubSubtitleNoMargin } from '../elements/Titles'
 
 // Views
 import Hero from '../views/Hero'
 import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
+import Experience from '../views/Experience'
 
-import avatar from '../images/avatar.jpg'
-import { Fragment } from 'react'
+import profileImage from '../images/Saiteja Prasadam.jpg'
+import propertyApps from '../images/Property Apps.png'
+//import { Fragment } from 'react'
 import { style_css } from '../styles/global.css'
 
 const ProjectsWrapper = styled.div`
@@ -44,10 +46,11 @@ const Avatar = styled.img`
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-white font-serif pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  width: 100%
 `
 
-const AboutDesc = styled.p`
+const Desc = styled.p`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
 `
 
@@ -78,6 +81,10 @@ const marginBottom = {
   marginBottom: "10px"
 }
 
+const li = {
+
+}
+
 const Index = () => (
   <>
     <Layout />
@@ -86,7 +93,7 @@ const Index = () => (
         <BigTitle>
           Hello, <br /> I'm Saiteja Prasadam.
         </BigTitle>
-        <Subtitle>DevOps Engineer.</Subtitle>
+        <Subtitle>DevOps Engineer · Montreal</Subtitle>
         
         <a style={marginRight} target="_blank" href="https://linkedin.com/in/saitejaprasadam/">
           <button style={buttonStyles}>LinkedIn</button>
@@ -105,39 +112,28 @@ const Index = () => (
         </a>
       </Hero>
       
-      <About offset={1}>
-        <Title>About</Title>
+      <Experience offset={1}>
+        <Title>Experience</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="Saiteja Prasadam" />
+          <Avatar src={propertyApps} alt="Property Apps" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts.<br/>
-
-            <a style={marginRight} target="_blank" href="https://linkedin.com/in/saitejaprasadam/">
-              <button style={buttonStyles}>LinkedIn</button>
-            </a>
-
-            <a style={marginRight} target="_blank" href="https://github.com/saitejaprasadam/">
-              <button style={buttonStyles}>Github</button>
-            </a>
-
-            <a style={marginRight} target="_blank" href="mailto:saitejaprasadam@gmail.com">
-              <button style={buttonStyles}>Email</button>
-            </a>
-
-            <a style={marginRight} target="_blank" href="/Saiteja Prasadam.pdf">
-              <button style={buttonStyles}>Resume</button>
-            </a>
+              <a target="_blank" href="https://linkedin.com/company/property-apps/">Property Apps</a>
+              <br/>
+              <SubtitleNoMargin>Full Stack Developer · PHP (Laravel), Angular 4 & Ionic 3</SubtitleNoMargin>
+              <SubSubtitleNoMargin>1 Year and 9 Months ( Jan 2017 – October 2018)</SubSubtitleNoMargin>
           </AboutSub>
-
         </AboutHero>
-        <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
-        </AboutDesc>
-      </About>
+        <Desc>
+          <ul>
+            <li>Worked on there on going project – Property Apps (The Property Apps app is a feature-full solution for building communication and management), Assisted in designing, developing and maintain various modules, which is being current used in many real estate companies to manage their buildings.</li>
+            <li>Technologies used Laravel (MVC), Angular 4, Ionic 3, JSON Rest API, Firebase Cloud Push Notifications, Word Press.</li>
+            <li>Integrated with Payment Gateway and Tenant Screening Providers (Naborly and Certn).</li>
+            <li>Ported Code Ignitor to Laravel Framework, Ionic 2 to Ionic 3.</li>
+            <li>Used Scrum Life Cycle.</li>
+          </ul>
+        </Desc>
+
+      </Experience>
       
       <Projects offset={2}>
         <Title>Projects</Title>
@@ -145,7 +141,7 @@ const Index = () => (
           <ProjectCard
             title="KMR Player"
             link="projects/kmr-player"
-            bg="linear-gradient(to right, #773987 0%, #BF2D64 100%)">
+            bg="linear-gradient(to right, #ED1E79 0%, #662D8C 100%)">
             Materialized Android Music Player with LAN Networking Support with your squad.
           </ProjectCard>
           <ProjectCard
@@ -168,10 +164,11 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
+      
       <About offset={4}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="Saiteja Prasadam" />
+          <Avatar src={profileImage} alt="Saiteja Prasadam" />
           <AboutSub>
             The English language can not fully capture the depth and complexity of my thoughts.<br/>
 
@@ -193,14 +190,15 @@ const Index = () => (
           </AboutSub>
 
         </AboutHero>
-        <AboutDesc>
+        <Desc>
           You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
           every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
           make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
           want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
           right?
-        </AboutDesc>
+        </Desc>
       </About>
+      
       <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>

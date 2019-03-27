@@ -28,3 +28,15 @@ export const Subtitle = styled.p`
   ${tw`text-2xl lg:text-2xl font-sans text-white mt-8 xxl:w-3/4`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `
+
+export const SubtitleNoMargin = styled.p`
+  ${tw`text-2xl lg:text-2xl font-sans text-white mt-1 xxl:w-3/4`};
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin: 4px !important;
+`
+
+export const SubSubtitleNoMargin = styled.p`
+  ${tw`text-lg lg:text-lg font-sans text-white mt-1 xxl:w-3/4`};
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin: 4px !important;
+`

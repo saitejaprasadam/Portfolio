@@ -103,7 +103,7 @@ const Head = props => {
       <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
       <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-      <meta name="gatsby-starter" content="Gatsby Starter Portfolio Cara" />
+      <meta name="gatsby-starter" content="Saiteja Prasadam - Professional Portfolio" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
       <meta name="msapplication-config" content="browserconfig.xml" />
       <meta name="description" content={description} />
