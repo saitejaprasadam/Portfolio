@@ -9,8 +9,8 @@
 /sw.js
   Cache-Control: no-cache
 /Portfolio/offline-plugin-app-shell-fallback/
-  Link: </Portfolio/webpack-runtime-49e1704cc7ba17a2e96c.js>; rel=preload; as=script
+  Link: </Portfolio/webpack-runtime-e656e730e1af69eaf700.js>; rel=preload; as=script
   Link: </Portfolio/component---node-modules-gatsby-plugin-offline-app-shell-js-cfbad065658beecf4111.js>; rel=preload; as=script
 /Portfolio/
-  Link: </Portfolio/webpack-runtime-49e1704cc7ba17a2e96c.js>; rel=preload; as=script
-  Link: </Portfolio/styles.2166ca87703f81d95c4b.css>; rel=preload; as=script
+  Link: </Portfolio/webpack-runtime-e656e730e1af69eaf700.js>; rel=preload; as=script
+  Link: </Portfolio/styles.12442b7d77c94fba4cc1.css>; rel=preload; as=script

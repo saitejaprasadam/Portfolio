@@ -1,5 +1,7 @@
 {
   "main.js": "render-page.js",
   "main.js.map": "render-page.js.map",
-  "static/avatar.jpg": "static/avatar-57bf1479de65ac381691568a3900915e.jpg"
+  "static/Contenterra.png": "static/Contenterra-3711912859074450a51587180263b8f6.png",
+  "static/Property Apps.png": "static/Property Apps-1f41b33c6637497496aa47cd76933899.png",
+  "static/Saiteja Prasadam.jpg": "static/Saiteja Prasadam-57bf1479de65ac381691568a3900915e.jpg"
 }
